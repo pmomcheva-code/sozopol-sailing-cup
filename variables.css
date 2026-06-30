@@ -1,0 +1,6 @@
+:root{--deep:#041321;--navy:#071f35;--blue:#0e3a5a;--paper:#f7f1e8;--cream:#fffaf1;--gold:#c8a15a;--ink:#0a2035;--muted:#667482;--line:rgba(200,161,90,.36)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}

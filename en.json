@@ -1,0 +1,54 @@
+{
+  "site": {
+    "title": "Sozopol Sailing Cup",
+    "dates": "11–13 September 2026",
+    "location": "Sozopol, Bulgaria",
+    "subtitle": "Regatta • Festival • Cause"
+  },
+  "registration": {
+    "label": "Enter the regatta",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeyX7fJ65j8lDWtOeq9MLJPHlEOxrFcGjpayfAM2DF4OaPudA/viewform?usp=dialog"
+  },
+  "story": {
+    "title": "Our story",
+    "quote": "I thought sailing would happen in my next life.",
+    "subquote": "I did not know it would change this one.",
+    "body": "From the first sailing course in Varna to meeting Yani, the birth of our son Leon, our family yacht and the first regatta in Sozopol — Sozopol Sailing Cup was born from love for the sea!"
+  },
+  "cause": {
+    "title": "The sea is our cause",
+    "focus2025": "Focus of 2025",
+    "topics2025": [
+      "Black Sea pollution",
+      "Sustainable tourism"
+    ],
+    "focus2026": "Focus of 2026",
+    "topics2026": [
+      "Women in sailing",
+      "Documentary cinema",
+      "Meetings and conversations"
+    ]
+  },
+  "organizers": [
+    "Sozopol Municipality",
+    "OMK Odessos Varna",
+    "Phos & Flame"
+  ],
+  "partners": [
+    "Herbs & Flowers",
+    "Черноморско злато",
+    "Промени картинката",
+    "Кор Кароли",
+    "ПМУ",
+    "Alves",
+    "Oriflame",
+    "Supravit",
+    "Хотел Созопол 99",
+    "Triple Green Building Solutions"
+  ],
+  "contact": {
+    "email": "sozopolsailingcup@gmail.com",
+    "phone": "+359 888 252 167",
+    "facebook": "https://www.facebook.com/profile.php?id=61577680336675"
+  }
+}

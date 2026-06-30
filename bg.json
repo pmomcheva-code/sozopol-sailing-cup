@@ -1,0 +1,54 @@
+{
+  "site": {
+    "title": "Sozopol Sailing Cup",
+    "dates": "11–13 септември 2026",
+    "location": "Созопол, България",
+    "subtitle": "Регата • Фестивал • Кауза"
+  },
+  "registration": {
+    "label": "Регистрация за участие",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeyX7fJ65j8lDWtOeq9MLJPHlEOxrFcGjpayfAM2DF4OaPudA/viewform?usp=dialog"
+  },
+  "story": {
+    "title": "Нашата история",
+    "quote": "Мислех, че ветроходството ще ми се случи в следващия живот.",
+    "subquote": "Не знаех, че то ще промени този.",
+    "body": "От първия курс във Варна до срещата с Яни, раждането на сина ни Леон, семейната яхта и първата регата в Созопол — Sozopol Sailing Cup се роди от любов към морето!"
+  },
+  "cause": {
+    "title": "Морето е нашата кауза",
+    "focus2025": "Фокус на 2025",
+    "topics2025": [
+      "Замърсяване на Черно море",
+      "Устойчив туризъм"
+    ],
+    "focus2026": "Фокус на 2026",
+    "topics2026": [
+      "Жените във ветроходството",
+      "Документално кино",
+      "Срещи и разговори"
+    ]
+  },
+  "organizers": [
+    "Община Созопол",
+    "ОМК Одесос Варна",
+    "Фос енд Флейм"
+  ],
+  "partners": [
+    "Herbs & Flowers",
+    "Черноморско злато",
+    "Промени картинката",
+    "Кор Кароли",
+    "ПМУ",
+    "Alves",
+    "Oriflame",
+    "Supravit",
+    "Хотел Созопол 99",
+    "Triple Green Building Solutions"
+  ],
+  "contact": {
+    "email": "sozopolsailingcup@gmail.com",
+    "phone": "+359 888 252 167",
+    "facebook": "https://www.facebook.com/profile.php?id=61577680336675"
+  }
+}
