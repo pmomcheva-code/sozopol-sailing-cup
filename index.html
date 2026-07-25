@@ -69,6 +69,183 @@ nav a[href="#women"]::after{content:"";}
 
 /* Responsive rules are included in style.css for this version. This file is reserved for mobile-specific overrides. */
 
+
+
+/* ==================================================
+   ПАРТНЬОРИ 2026
+================================================== */
+
+.partners-2026 {
+  padding: 54px 0 62px;
+}
+
+.partners-2026 > h3 {
+  margin: 0 0 10px;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 3vw, 38px);
+  font-weight: 400;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+
+.partners-2026-intro {
+  margin: 0 auto 34px;
+  text-align: center;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-style: italic;
+}
+
+.partner-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.partner-logo-card {
+  position: relative;
+  display: flex;
+  flex: 0 1 calc(25% - 18px);
+  align-items: center;
+  justify-content: center;
+  min-width: 210px;
+  min-height: 190px;
+  padding: 28px 24px;
+  overflow: hidden;
+  border: 1px solid #eee4d8;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.partner-logo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  pointer-events: none;
+  transition: border-color .25s ease;
+}
+
+.partner-logo-card:hover,
+.partner-logo-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(200, 161, 90, .7);
+  box-shadow: 0 22px 50px rgba(10, 32, 53, .12);
+}
+
+.partner-logo-card:hover::after,
+.partner-logo-card:focus-visible::after {
+  border-color: var(--gold);
+}
+
+.partner-logo-card:focus-visible {
+  outline: 3px solid rgba(200, 161, 90, .4);
+  outline-offset: 4px;
+}
+
+.partner-logo-card img {
+  width: auto;
+  max-width: 175px;
+  max-height: 100px;
+  object-fit: contain;
+  transition:
+    transform .25s ease,
+    opacity .25s ease;
+}
+
+.partner-logo-card:hover img,
+.partner-logo-card:focus-visible img {
+  transform: scale(1.045);
+  opacity: .3;
+}
+
+.partner-logo-card span {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 50%;
+  z-index: 2;
+  color: var(--deep);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(-35%);
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+}
+
+.partner-logo-card:hover span,
+.partner-logo-card:focus-visible span {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+/* Лога със специфични пропорции */
+.partner-logo-card img[src*="better-half"] {
+  max-width: 190px;
+  max-height: 110px;
+}
+
+.partner-logo-card img[src*="rocket-science"] {
+  max-height: 120px;
+}
+
+.partner-logo-card img[src*="brain-foods"] {
+  max-width: 185px;
+}
+
+.partner-logo-card img[src*="sls"] {
+  max-width: 190px;
+}
+
+.partner-logo-card img[src*="promeni"] {
+  max-width: 165px;
+}
+
+.partner-logo-card img[src*="oriflame"] {
+  max-width: 165px;
+}
+
+@media (max-width: 1050px) {
+  .partner-logo-card {
+    flex-basis: calc(50% - 18px);
+  }
+}
+
+@media (max-width: 620px) {
+  .partners-2026 {
+    padding: 44px 0 52px;
+  }
+
+  .partner-logo-grid {
+    gap: 12px;
+  }
+
+  .partner-logo-card {
+    flex-basis: 100%;
+    min-width: 0;
+    min-height: 170px;
+  }
+
+  .partner-logo-card img {
+    max-width: 190px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -338,16 +515,13 @@ nav a[href="#women"]::after{content:"";}
   </div>
 </div>
     <div class="partner-block">
-      <h3>Партньори 2025</h3>
+      <h3 data-bg="Партньори на първото издание – 2025" data-en="Partners of the first edition – 2025">Партньори на първото издание – 2025</h3>
       <div class="logos many">
         <figure><img src="herbs.png" alt="Herbs & Flowers"><figcaption>Herbs & Flowers</figcaption></figure>
         <figure><img src="black-sea-gold.png" alt="Черноморско злато"><figcaption>Черноморско злато</figcaption></figure>
-        <figure><img src="promeni.jpg" alt="Промени картинката"><figcaption>Промени картинката</figcaption></figure>
         <figure><img src="cor-caroli.png" alt="Кор Кароли"><figcaption>Кор Кароли</figcaption></figure>
         <figure><img src="pmu.jpg" alt="ПМУ"><figcaption>ПМУ</figcaption></figure>
         <figure><img src="alves.png" alt="Alves"><figcaption>Alves</figcaption></figure>
-        <figure><img src="oriflame.png" alt="Oriflame"><figcaption>Oriflame</figcaption></figure>
-        <figure><img src="supravit.png" alt="Supravit"><figcaption>Supravit</figcaption></figure>
         <figure><img src="hotel99.png" alt="Хотел Созопол 99"><figcaption>Хотел Созопол 99</figcaption></figure>
         <figure><img src="triple.webp" alt="Triple Green Building Solutions"><figcaption>Triple Green Building Solutions</figcaption></figure>
       </div>
