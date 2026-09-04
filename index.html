@@ -196,6 +196,178 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
   .partner-logo-card{flex-basis:100%;min-width:0;min-height:170px}
   .partner-logo-card img{max-width:190px}
 }
+/* PHOTO CONTEST 2026 */
+.photo-contest{
+  background:var(--cream);
+  color:var(--ink);
+  position:relative;
+  overflow:hidden;
+}
+
+.photo-contest:before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border:1px solid rgba(200,161,90,.18);
+  border-radius:50%;
+  right:-240px;
+  top:-180px;
+  pointer-events:none;
+}
+
+.photo-contest-intro{
+  max-width:900px;
+  margin-bottom:48px;
+}
+
+.photo-contest-intro h2{
+  max-width:850px;
+}
+
+.photo-contest-lead{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--gold);
+  font-size:clamp(23px,2.5vw,34px);
+  margin:0 0 18px;
+}
+
+.photo-contest-intro p:not(.eyebrow):not(.photo-contest-lead){
+  max-width:780px;
+  font-size:18px;
+  color:#405263;
+}
+
+.contest-steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin:42px 0;
+}
+
+.contest-step{
+  min-height:260px;
+  padding:28px;
+  border:1px solid #eadfce;
+  background:#fff;
+  position:relative;
+}
+
+.contest-number{
+  display:block;
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:42px;
+  line-height:1;
+  margin-bottom:28px;
+}
+
+.contest-step h3{
+  margin:0 0 12px;
+  color:var(--deep);
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.contest-step p{
+  margin:0;
+  color:#405263;
+  line-height:1.6;
+}
+
+.contest-highlight{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  margin-top:42px;
+  background:var(--deep);
+  color:#fff;
+}
+
+.contest-highlight > div{
+  padding:38px;
+  border-right:1px solid rgba(255,255,255,.12);
+}
+
+.contest-highlight > div:last-child{
+  border-right:0;
+}
+
+.contest-highlight small{
+  display:block;
+  margin-bottom:10px;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-weight:900;
+}
+
+.contest-highlight strong{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:30px;
+  font-weight:400;
+  line-height:1.2;
+}
+
+.contest-rules{
+  margin-top:48px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+
+.contest-rules h3{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:32px;
+  margin:0 0 20px;
+}
+
+.contest-rules ul{
+  margin:0;
+  padding-left:22px;
+  max-width:900px;
+  color:#405263;
+}
+
+.contest-rules li{
+  margin-bottom:10px;
+  padding-left:5px;
+}
+
+.contest-final{
+  margin:38px 0 0;
+  font-family:Georgia,serif;
+  font-size:clamp(26px,3vw,42px);
+  color:var(--gold);
+}
+
+@media(max-width:1050px){
+  .contest-steps{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:620px){
+  .contest-steps,
+  .contest-highlight{
+    grid-template-columns:1fr;
+  }
+
+  .contest-step{
+    min-height:0;
+  }
+
+  .contest-highlight > div{
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .contest-highlight > div:last-child{
+    border-bottom:0;
+  }
+}
 </style>
 </head>
 
@@ -204,7 +376,7 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
   <a class="brand" href="#top" aria-label="Sozopol Sailing Cup"><img src="ssc-logo.png" alt="Sozopol Sailing Cup"/><span>Sozopol<br><b>Sailing Cup</b></span></a>
   <button class="menu" id="menuBtn">Меню</button>
   <nav id="navlinks">
-    <a href="#cause">Кауза</a><a href="#regatta">Регата</a><a href="#registration">Регистрация</a><a href="#festival">Фестивал</a><a href="#women">Фокус 2026</a><a href="#team">Екипът</a><a href="#media">Медии</a><a href="#partners">Партньори</a><a href="#contact">Контакти</a>
+    <a href="#cause">Кауза</a><a href="#regatta">Регата</a><a href="#registration">Регистрация</a><a href="#festival">Фестивал</a><a href="#photo-contest">Фотоконкурс</a><a href="#women">Фокус 2026</a><a href="#team">Екипът</a><a href="#media">Медии</a><a href="#partners">Партньори</a><a href="#contact">Контакти</a>
   </nav>
   <div class="lang"><button class="active" data-lang="bg">BG</button><button data-lang="en">EN</button></div>
 </header>
@@ -304,6 +476,138 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
   </div>
 </section>
 
+  <section id="photo-contest" class="section photo-contest reveal">
+
+  <div class="photo-contest-intro">
+    <p class="eyebrow">Фотоконкурс · Sozopol Sailing Cup 2026</p>
+
+    <h2>Покажи ни регатата през твоите очи.</h2>
+
+    <p class="photo-contest-lead">
+      Този път гледаме към морето и от брега.
+    </p>
+
+    <p>
+      Ако си в Созопол между 11 и 13 септември,
+      снимай Sozopol Sailing Cup от брега и участвай
+      във фотоконкурса на регатата.
+    </p>
+  </div>
+
+  <div class="contest-steps">
+
+    <article class="contest-step">
+      <span class="contest-number">01</span>
+      <h3>Харесай</h3>
+      <p>
+        Харесай Facebook страницата
+        <strong>Sozopol Sailing Cup</strong>.
+      </p>
+    </article>
+
+    <article class="contest-step">
+      <span class="contest-number">02</span>
+      <h3>Снимай</h3>
+      <p>
+        Направи свои авторски снимки на регатата
+        <strong>от брега</strong> по време на
+        Sozopol Sailing Cup 2026.
+      </p>
+    </article>
+
+    <article class="contest-step">
+      <span class="contest-number">03</span>
+      <h3>Публикувай</h3>
+      <p>
+        Публикувай снимките във Facebook или Instagram,
+        отбележи <strong>Sozopol Sailing Cup</strong>
+        и добави <strong>#SozopolSailingCup</strong>.
+      </p>
+    </article>
+
+    <article class="contest-step">
+      <span class="contest-number">04</span>
+      <h3>Участвай</h3>
+      <p>
+        Можеш да участваш с
+        <strong>колкото снимки пожелаеш</strong>.
+        Всяка фотография участва самостоятелно.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="contest-highlight">
+
+    <div>
+      <small>Краен срок</small>
+      <strong>13 септември · 12:00 ч.</strong>
+    </div>
+
+    <div>
+      <small>Гласуване</small>
+      <strong>13 септември · 14:00 – 16:30 ч.</strong>
+    </div>
+
+  </div>
+
+  <div class="contest-rules">
+
+    <h3>Как избираме победителя?</h3>
+
+    <p>
+      Всички снимки, които отговарят на условията на конкурса,
+      ще бъдат публикувани <strong>едновременно в 14:00 ч. на
+      13 септември</strong> на Facebook страницата на
+      Sozopol Sailing Cup.
+    </p>
+
+    <p>
+      Гласуването ще бъде чрез реакции към отделните фотографии.
+      Печели <strong>снимката, събрала най-много реакции
+      до 16:30 ч.</strong>
+    </p>
+
+    <p>
+      Победителят ще бъде обявен и награден по време на
+      официалното награждаване на Sozopol Sailing Cup 2026
+      <strong>в 17:00 ч. на 13 септември в Лятното кино в Созопол.</strong>
+    </p>
+
+    <h3>Условия за участие</h3>
+
+    <ul>
+      <li>Снимките трябва да са авторски и заснети по време на Sozopol Sailing Cup 2026 – 11–13 септември.</li>
+
+      <li>Конкурсът е за публиката на регатата – снимките трябва да бъдат направени <strong>от брега</strong>.</li>
+
+      <li>Всеки участник може да участва с <strong>неограничен брой снимки</strong>.</li>
+
+      <li>Всяка снимка участва и се оценява самостоятелно.</li>
+
+      <li>За участие е необходимо да харесаш Facebook страницата на <strong>Sozopol Sailing Cup</strong>.</li>
+
+      <li>Публикацията трябва да отбелязва <strong>Sozopol Sailing Cup</strong> и да съдържа <strong>#SozopolSailingCup</strong>.</li>
+
+      <li>Публикацията или профилът трябва да бъдат публични, за да можем да открием снимката.</li>
+
+      <li>Крайният срок за участие е <strong>12:00 ч. на 13 септември 2026 г.</strong></li>
+
+      <li>
+        С участието си авторът се съгласява снимката му да бъде
+        публикувана от Sozopol Sailing Cup във връзка с провеждането
+        и популяризирането на конкурса, при посочване на автора.
+      </li>
+    </ul>
+
+    <p class="contest-final">
+      Снимай от брега. Улови момента. Покажи ни твоя Sozopol Sailing Cup.
+    </p>
+
+  </div>
+
+</section>
+  
 <section id="media" class="section media dark reveal">
   <div class="section-head"><p class="eyebrow">Медиите за нас</p><h2>Истории, репортажи и разговори от първото издание.</h2></div>
   <div class="media-grid">
