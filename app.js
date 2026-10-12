@@ -8,7 +8,7 @@ document.querySelectorAll('.lang button').forEach(btn=>btn.addEventListener('cli
 
 // Set the initial language from the HTML lang attribute when opening en.html
 (function(){
-  const initial = document.documentElement.lang === 'en' ? 'en' : 'bg';
+  const initial = (new URLSearchParams(location.search).get('lang') === 'en' || document.documentElement.lang === 'en') ? 'en' : 'bg';
   if(initial === 'en'){
     document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active', b.dataset.lang==='en'));
     document.querySelectorAll('[data-bg]').forEach(el=>{el.textContent=el.dataset.en||el.dataset.bg});

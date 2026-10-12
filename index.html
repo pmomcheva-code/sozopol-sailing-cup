@@ -369,14 +369,16 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
   }
 }
 </style>
-</head>
+<style>
+.ssc-highlights{background:#faf8f4}.ssc-highlights .section-head{max-width:900px;margin:0 auto 34px;text-align:center}.ssc-highlights .section-head p:last-child{line-height:1.8}.ssc-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1250px;margin:auto}.ssc-photo-grid figure{margin:0;position:relative;overflow:hidden;background:#eee;aspect-ratio:4/3}.ssc-photo-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}.ssc-photo-grid figure:hover img{transform:scale(1.04)}.ssc-photo-grid figcaption{position:absolute;bottom:0;left:0;right:0;color:white;padding:22px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-size:14px}.ssc-credit{text-align:right;font-size:12px;max-width:1250px;margin:12px auto 0;color:#666}.ssc-next{max-width:850px;margin:50px auto 0;text-align:center}.ssc-next p{line-height:1.7;margin-bottom:22px}#registration,#photo-contest{display:none!important}@media(max-width:700px){.ssc-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ssc-photo-grid figure{aspect-ratio:1/1}}
+</style></head>
 
 <body>
 <header class="nav" id="nav">
   <a class="brand" href="#top" aria-label="Sozopol Sailing Cup"><img src="ssc-logo.png" alt="Sozopol Sailing Cup"/><span>Sozopol<br><b>Sailing Cup</b></span></a>
   <button class="menu" id="menuBtn">Меню</button>
   <nav id="navlinks">
-    <a href="#cause">Кауза</a><a href="#regatta">Регата</a><a href="#registration">Регистрация</a><a href="#festival">Фестивал</a><a href="#photo-contest">Фотоконкурс</a><a href="#women">Фокус 2026</a><a href="#team">Екипът</a><a href="#media">Медии</a><a href="#partners">Партньори</a><a href="#contact">Контакти</a>
+    <a href="#cause">Кауза</a><a href="#regatta">Регата</a><a href="#highlights-2026">2026 Highlights</a><a href="#festival">Фестивал</a><a href="#women">Фокус 2026</a><a href="#team">Екипът</a><a href="#media">Медии</a><a href="#partners">Партньори</a><a href="#contact">Контакти</a>
   </nav>
   <div class="lang"><button class="active" data-lang="bg">BG</button><button data-lang="en">EN</button></div>
 </header>
@@ -390,20 +392,38 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
     <p class="script" data-bg="Морето събира хора." data-en="The sea brings people together.">Морето събира хора.</p>
     <p class="sub" data-bg="Регата • Фестивал • Кауза" data-en="Regatta • Festival • Cause">Регата • Фестивал • Кауза</p>
     <div class="actions">
-      <a class="btn fill" href="https://docs.google.com/forms/d/e/1FAIpQLSdWUWV78SR_XF7ibhukXdK5xfAkQ6cIO8BWcnZ_gJ8jMPXoMA/viewform" target="_blank" rel="noopener" data-bg="Регистрация за участие" data-en="Enter the regatta">Регистрация за участие</a>
-      <a class="btn" href="NoR-SSC-2026.docx" data-bg="Свали NoR 2026" data-en="Download NoR 2026">Свали NoR 2026</a>
-      <a class="btn" href="#partner" data-bg="Стани партньор" data-en="Become a partner">Стани партньор</a>
+      <a class="btn fill" href="#highlights-2026" data-bg="Виж 2026" data-en="Explore 2026">Виж 2026</a>
+      <a class="btn" href="#partners" data-bg="Партньори 2026" data-en="2026 partners">Партньори 2026</a>
+      <a class="btn" href="#contact" data-bg="Партньорство 2027" data-en="Partner with us in 2027">Стани партньор</a>
     </div>
   </div>
 </section>
 
 <section class="stats reveal" aria-label="Статистика">
-  <div><b>34</b><span data-bg="яхти в първото издание" data-en="yachts in the first edition">яхти в първото издание</span></div>
-  <div><b>170+</b><span data-bg="ветроходци на вода" data-en="sailors on the water">ветроходци на вода</span></div>
+  <div><b>40</b><span data-bg="яхти през 2026" data-en="yachts in 2026">яхти през 2026</span></div>
+  <div><b>190</b><span data-bg="участници през 2026" data-en="participants in 2026">участници през 2026</span></div>
   <div><b>3</b><span data-bg="дни регата и фестивал" data-en="days of racing and festival">дни регата и фестивал</span></div>
-  <div><b>2026</b><span data-bg="очакваме по-голям флот" data-en="a stronger fleet expected">очакваме по-голям флот</span></div>
+  <div><b>2027</b><span data-bg="следващото издание" data-en="the next edition">следващото издание</span></div>
 </section>
 
+<section id="highlights-2026" class="section ssc-highlights reveal">
+ <div class="section-head"><p class="eyebrow">SOZOPOL SAILING CUP · 2026</p><h2 data-bg="Три дни на вода и на брега" data-en="Three days on and off the water">Три дни на вода и на брега</h2>
+ <p data-bg="От 11 до 13 септември Созопол посрещна 40 яхти и 190 участници за второто издание на Sozopol Sailing Cup. Състезания в класовете ORC, IRC и Туристически лодки, Pro-Am, документално кино, срещи и награждаване в Лятното кино събраха ветроходството и града в една програма." data-en="From 11 to 13 September, Sozopol welcomed 40 yachts and 190 participants for the second Sozopol Sailing Cup. ORC, IRC and Tourist fleet racing, a Pro-Am event, documentary film, conversations and an open-air awards ceremony brought sailing and the town together.">От 11 до 13 септември Созопол посрещна 40 яхти и 190 участници за второто издание на Sozopol Sailing Cup. Състезания в класовете ORC, IRC и Туристически лодки, Pro-Am, документално кино, срещи и награждаване в Лятното кино събраха ветроходството и града в една програма.</p></div>
+ <div class="ssc-photo-grid"><figure><img src="highlights-2026/_DSC0165.webp" alt="Sozopol Sailing Cup 2026 — On the water" loading="lazy"/><figcaption data-bg="На вода" data-en="On the water">На вода</figcaption></figure>
+<figure><img src="highlights-2026/_DSC0402.webp" alt="Sozopol Sailing Cup 2026 — Racing moments" loading="lazy"/><figcaption data-bg="Състезателни моменти" data-en="Racing moments">Състезателни моменти</figcaption></figure>
+<figure><img src="highlights-2026/_DSC9194.webp" alt="Sozopol Sailing Cup 2026 — Crews" loading="lazy"/><figcaption data-bg="Екипажи" data-en="Crews">Екипажи</figcaption></figure>
+<figure><img src="highlights-2026/_DSC9667.webp" alt="Sozopol Sailing Cup 2026 — Regatta" loading="lazy"/><figcaption data-bg="Регата" data-en="Regatta">Регата</figcaption></figure>
+<figure><img src="highlights-2026/_DSC0217.webp" alt="Sozopol Sailing Cup 2026 — Atmosphere" loading="lazy"/><figcaption data-bg="Атмосфера" data-en="Atmosphere">Атмосфера</figcaption></figure>
+<figure><img src="highlights-2026/_DSC9147.webp" alt="Sozopol Sailing Cup 2026 — The people" loading="lazy"/><figcaption data-bg="Хората на регатата" data-en="The people">Хората на регатата</figcaption></figure>
+<figure><img src="highlights-2026/_DSC9027.webp" alt="Sozopol Sailing Cup 2026 — Awards" loading="lazy"/><figcaption data-bg="Награждаване" data-en="Awards">Награждаване</figcaption></figure>
+<figure><img src="highlights-2026/_DSC9807.webp" alt="Sozopol Sailing Cup 2026 — The finale" loading="lazy"/><figcaption data-bg="Финалът" data-en="The finale">Финалът</figcaption></figure>
+<figure><img src="highlights-2026/_DSC0176.webp" alt="Sozopol Sailing Cup 2026 — Conference" loading="lazy"/><figcaption data-bg="Конференция" data-en="Conference">Конференция</figcaption></figure>
+<figure><img src="highlights-2026/_DSC0060.webp" alt="Sozopol Sailing Cup 2026 — Conversations" loading="lazy"/><figcaption data-bg="Срещи" data-en="Conversations">Срещи</figcaption></figure>
+<figure><img src="highlights-2026/_DSC0115.webp" alt="Sozopol Sailing Cup 2026 — Partners" loading="lazy"/><figcaption data-bg="Партньори" data-en="Partners">Партньори</figcaption></figure>
+<figure><img src="highlights-2026/_DSC0147.webp" alt="Sozopol Sailing Cup 2026 — On shore" loading="lazy"/><figcaption data-bg="На брега" data-en="On shore">На брега</figcaption></figure></div>
+ <p class="ssc-credit" data-bg="Снимки: Драгомир Георгиев" data-en="Photography: Dragomir Georgiev">Снимки: Драгомир Георгиев</p>
+ <div class="ssc-next"><h3 data-bg="Следващата глава: 2027" data-en="Next chapter: 2027">Следващата глава: 2027</h3><p data-bg="Развиваме регатата като спортно и фестивално събитие, отворено за нови идеи и партньорства. Ако виждате своята марка в Созопол, нека поговорим." data-en="We are growing the regatta as both a sporting and cultural event, open to new ideas and collaborations. If you can picture your brand in Sozopol, let's talk.">Развиваме регатата като спортно и фестивално събитие, отворено за нови идеи и партньорства. Ако виждате своята марка в Созопол, нека поговорим.</p><a class="btn fill" href="#contact" data-bg="Свържете се с нас" data-en="Get in touch">Свържете се с нас</a></div>
+</section>
 <section class="manifest section reveal">
   <p data-bg="Не организираме просто регата." data-en="We are not simply organizing a regatta.">Не организираме просто регата.</p>
   <h2 data-bg="Създаваме причина хората да се връщат в Созопол." data-en="We are creating a reason for people to return to Sozopol.">Създаваме причина хората да се връщат в Созопол.</h2>
@@ -451,7 +471,7 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
 </section>
 
 <section id="women" class="section women dark reveal">
-  <div class="women-text"><p class="eyebrow">Фокус на 2026</p><h2 data-bg="Жените във ветроходството" data-en="Women at the Helm">Жените във ветроходството</h2><p data-bg="Тази година посвещаваме специален акцент на жените, които прекосяват хоризонти, променят стереотипи и вдъхновяват нови екипажи." data-en="This year we dedicate a special focus to women who cross horizons, challenge stereotypes and inspire new crews.">Тази година посвещаваме специален акцент на жените, които прекосяват хоризонти, променят стереотипи и вдъхновяват нови екипажи.</p></div>
+  <div class="women-text"><p class="eyebrow">Фокус на 2026</p><h2 data-bg="Жените във ветроходството" data-en="Women at the Helm">Жените във ветроходството</h2><p data-bg="През 2026 г. поставихме специален акцент върху жените във ветроходството — с кино, срещи и разговори." data-en="In 2026 we highlighted women in sailing through film, meetings and conversations.">През 2026 г. поставихме специален акцент върху жените във ветроходството — с кино, срещи и разговори.</p></div>
   <article class="film"><img src="women-wind.jpg" alt="Women and the Wind"/><div><h3>Women &amp; the Wind</h3><p>Три жени. Един катамаран. Северният Атлантик.</p></div></article>
   <article class="film"><img src="time-to-dare.jpg" alt="Екипажът на Time to Dare"/><div><h3>Time to Dare</h3><p>История за момичетата, които избират смелостта.</p></div></article>
 </section>
@@ -845,7 +865,7 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:30px 5vw;back
     <p data-bg="Попълнете официалната Google регистрационна форма. След подаване ще се свържем с вас за потвърждение и следващи инструкции." data-en="Fill in the official Google registration form. After submission, we will contact you with confirmation and next steps.">Попълнете официалната Google регистрационна форма. След подаване ще се свържем с вас за потвърждение и следващи инструкции.</p>
     <div class="actions center-actions">
       <a class="btn fill darktext" href="https://docs.google.com/forms/d/e/1FAIpQLSdWUWV78SR_XF7ibhukXdK5xfAkQ6cIO8BWcnZ_gJ8jMPXoMA/viewform" target="_blank" rel="noopener" data-bg="Регистрация за участие" data-en="Registration form">Регистрация за участие</a>
-      <a class="btn darktext outline" href="NoR-SSC-2026.docx" data-bg="Свали NoR 2026" data-en="Download NoR 2026">Свали NoR 2026</a>
+      <a class="btn darktext outline" href="#partners" data-bg="Партньори 2026" data-en="2026 partners">Партньори 2026</a>
     </div>
   </div>
 </section>
